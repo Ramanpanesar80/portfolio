@@ -21,7 +21,6 @@ body{
     opacity: 0.8;
 }
 
-
 #container{
     padding: 10px 10%;
     margin-left: 10px;
@@ -116,6 +115,7 @@ nav ul li a:hover::after{
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+    
 }
 
 .tab-links{
@@ -144,6 +144,7 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    margin-top: 20px;
 }
 
 .tab-contents ul li span{
@@ -254,3 +255,24 @@ span{
     margin-top: -20px;
     display: block;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .sub-title {
+        font-size: 2rem;
+    }
+}
+
